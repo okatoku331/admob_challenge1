@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'AdMob Challenge 2'),
+      home: MyHomePage(title: 'AdMob Challenge 3'),
     );
   }
 }
