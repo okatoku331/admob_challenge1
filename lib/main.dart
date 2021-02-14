@@ -1,3 +1,4 @@
+import 'package:admob_challenge1/services/admob.dart';
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:flutter/material.dart';
 
@@ -54,6 +55,14 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            AdmobBanner(
+                adUnitId: AdMobService().getBannerAdUnitId(),
+                adSize: AdmobBannerSize(
+                  width: MediaQuery.of(context).size.width.toInt(),
+                  height: AdMobService().getHeight(context).toInt(),
+                  name: 'SMART_BANNER',
+                )
+            ),
             Text(
               'You have pushed the button this many times:',
             ),
