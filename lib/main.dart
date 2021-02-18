@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'AdMob Challenge 3'),
+      home: MyHomePage(title: 'AdMob Challenge 4'
+          ''),
     );
   }
 }
